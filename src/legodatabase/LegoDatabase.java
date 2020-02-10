@@ -16,7 +16,7 @@ public class LegoDatabase {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        PieceClassifier database = new PieceClassifier();
+        DatabaseAccessor database = new DatabaseAccessor();
         LegoPiece newPiece;
         
         System.out.println("Enter a lego piece's information: id, type, colour, width, length, stock, used");
