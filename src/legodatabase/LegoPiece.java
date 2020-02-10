@@ -120,6 +120,7 @@ public class LegoPiece {
     /*
         Creates a string that can be used to title entries
     */
+    @Override
     public String toString()
     {
         String name = this.width + "x" + this.length + " " + this.type + " - " + this.colour;
