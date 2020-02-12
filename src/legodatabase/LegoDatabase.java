@@ -1,12 +1,9 @@
-/*
-    Class to handle the database
- */
 package legodatabase;
 
 import java.util.Scanner;
 
 /**
- * @author amrnosir
+ * @author Amr Nosir and Valerie Figuracion
  */
 public class LegoDatabase {
 
@@ -16,24 +13,27 @@ public class LegoDatabase {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        DatabaseAccessor database = new DatabaseAccessor();
+        DatabaseAccessor dbAcc = DatabaseAccessor.getInstance();
+        PieceHandler pcHandler = new PieceHandler();
         LegoPiece newPiece;
         
-        System.out.println("Enter a lego piece's information: id, type, colour, width, length, stock, used");
-        Scanner in = new Scanner(System.in);
-        newPiece = new LegoPiece(in.next(), in.next(), in.next(), in.nextInt(), in.nextInt(), in.nextInt(), in.nextInt());
-        database.addPiece(newPiece);
-        
-        System.out.println("Enter a lego piece's information: id, type, colour, width, length, stock, used");
-        in = new Scanner(System.in);
-        newPiece = new LegoPiece(in.next(), in.next(), in.next(), in.nextInt(), in.nextInt(), in.nextInt(), in.nextInt());
-        database.addPiece(newPiece);
-        
-        System.out.println("It didn't break woo!");
-        
-        database.getList();
-        
-        System.out.println("It didn't break here either double woo!!");
+        while(true){
+            System.out.println("Enter a lego piece's information: id, type, colour, width, length, stock, used");
+            System.out.println("(To exit enter: -1)");
+            Scanner in = new Scanner(System.in);
+            String firstEntry = in.next();
+            if(firstEntry.equals("-1")){
+                System.out.println("B-Bye!!");
+                break;
+            }
+            newPiece = new LegoPiece(firstEntry, in.next(), in.next(), in.nextInt(), in.nextInt(), in.nextInt(), in.nextInt());
+            pcHandler.addPiece(newPiece);
+
+            System.out.println("It didn't break woo!");
+
+
+            System.out.println("It didn't break here either double woo!!");
+        }
     }
     
 }

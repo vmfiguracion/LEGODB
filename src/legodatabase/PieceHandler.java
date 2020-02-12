@@ -1,16 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package legodatabase;
 
 /**
  * Will be renamed. Builds queries/updates to be applied to database
  */
-public class PieceClassifier {
+public class PieceHandler {
 
     //The connection and statement go here
+    public PieceHandler(){
+        
+    }
     
     /**
      * Build an UPDATE query

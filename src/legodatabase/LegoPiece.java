@@ -1,10 +1,7 @@
-/*
-    Class to define and perform basic tasks for each piece
- */
 package legodatabase;
 
-/**
- * @author amrnosir
+/*
+    Class to define and perform basic tasks for each piece
  */
 public class LegoPiece {
     private String id;          //Unique piece ID
