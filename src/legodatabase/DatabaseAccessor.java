@@ -50,12 +50,14 @@ public class DatabaseAccessor {
         return conn;
     }
     
-    public void submitQuery(String qry, Statement stmt){
+    public ResultSet submitQuery(String qry, Statement stmt){
+        ResultSet rs = null;
         
+        return rs;
     }
     
-    public void submitUpdate(String upd, Statement stmt){
-        
+    public boolean submitUpdate(String upd, Statement stmt){
+        return false;
     }
     
 }

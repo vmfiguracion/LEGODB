@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/enosamr/Desktop/Lego%20Database/LEGODB/src/legodatabase/PieceHandler.java</file>
-            <file>file:/C:/Users/enosamr/Desktop/Lego%20Database/LEGODB/src/legodatabase/LegoDatabase.java</file>
-            <file>file:/C:/Users/enosamr/Desktop/Lego%20Database/LEGODB/src/legodatabase/LegoPiece.java</file>
-            <file>file:/C:/Users/enosamr/Desktop/Lego%20Database/LEGODB/src/legodatabase/DatabaseAccessor.java</file>
+            <file>file:/C:/Users/enosamr/Desktop/LEGODB/src/legodatabase/DatabaseAccessor.java</file>
+            <file>file:/C:/Users/enosamr/Desktop/LEGODB/src/legodatabase/LegoPiece.java</file>
+            <file>file:/C:/Users/enosamr/Desktop/LEGODB/src/legodatabase/LegoDatabase.java</file>
+            <file>file:/C:/Users/enosamr/Desktop/LEGODB/src/legodatabase/PieceHandler.java</file>
         </group>
     </open-files>
 </project-private>

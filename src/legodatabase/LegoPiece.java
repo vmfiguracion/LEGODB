@@ -7,6 +7,8 @@ public class LegoPiece {
     private String id;          //Unique piece ID
     private String type;        //Type of piece, rectangle, semi circle, stud, etc.
     private String colour;      //Colour...
+    private String dispType;    //The type name chosen by the user
+    private String dispColour;  //The colour chosen by the user
     private int width;          //Piece width in studs
     private int length;         //Piece length in studs
     private int stock;          //Total number of piece in stock
@@ -18,6 +20,8 @@ public class LegoPiece {
         this.id = id;
         this.type = type;
         this.colour = colour;
+        this.dispType = type;
+        this.dispColour = colour;
         this.width = width;
         this.length = length;
         this.stock = stock;
@@ -30,6 +34,8 @@ public class LegoPiece {
         this.id = id;
         this.type = type;
         this.colour = colour;
+        this.dispType = type;
+        this.dispColour = colour;
         this.width = width;
         this.length = length;
         this.stock = 0;
@@ -41,6 +47,8 @@ public class LegoPiece {
     public String getId(){return this.id;}
     public String getType(){return this.type;}
     public String getColour(){return this.colour;}
+    public String getDispType(){return this.dispType;}
+    public String getDispColour(){return this.dispColour;}
     public int getWidth(){return this.width;}
     public int getLength(){return this.length;}
     public int getStock(){return this.stock;}
@@ -52,11 +60,18 @@ public class LegoPiece {
         String size = this.width + "x" + this.length; 
         return size;
     }
+    //A method to get the full name for display
+    public String getDispName(){
+        String dispName = this.dispColour + " " + this.dispType;
+        return dispName;
+        }
     
     //Standard set methods. For fixing errors and blah blah
     public void setId(String id){this.id = id;}
     public void setType(String type){this.type = type;}
     public void setColour(String colour){this.colour = colour;}
+    public void setDispType(String dispType){this.dispType = dispType;}
+    public void setDispColour(String dispColour){this.dispColour = dispColour;}
     public void setWidth(int width){this.width = width;}
     public void setLength(int length){this.length = length;}
     
@@ -112,6 +127,14 @@ public class LegoPiece {
     {
         this.used = this.used + inc;
         this.updateRem();
+    }
+    
+    /*
+        Resets display to default values
+    */
+    public void resetDefaultDisp(){
+        this.dispType = this.type;
+        this.dispColour = this.colour;
     }
     
     /*
